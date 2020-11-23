@@ -67,3 +67,9 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# phpstorm files
+.idea
+
+# tailwind full config
+/tailwind.config-full.js
