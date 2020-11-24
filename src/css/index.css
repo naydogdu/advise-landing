@@ -4,5 +4,10 @@
 
 @layer base {
     @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins:wght@300;600;800&display=swap');
+}
 
+@layer components {
+    .object-cover .gatsby-image-wrapper {
+        height: theme('height.full')
+    }
 }

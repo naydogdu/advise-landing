@@ -1,8 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-//import Img from "gatsby-image"
+import Img from "gatsby-image"
 
-const HomeImage = ({...props}) => {
+const HomeImage = (props) => {
     const data = useStaticQuery(graphql`
         query {
           placeholderImage: file(relativePath: { eq: "home.jpg" }) {
@@ -19,10 +19,8 @@ const HomeImage = ({...props}) => {
         return <div>Picture not found</div>
     }
 
-    console.log('homeimage', data)
-
     return (
-        <img alt="" src={data.placeholderImage.childImageSharp.fluid.src} {...props} />
+        <Img fluid={data.placeholderImage.childImageSharp.fluid} {...props} />
     )
 }
 

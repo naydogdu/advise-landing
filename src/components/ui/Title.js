@@ -10,12 +10,14 @@ const Title = ({ ...props }) => {
     const Level = `h${ props.level }`
 
     return (
-        <Level className={"text-5xl -ml-px"}>
-            <strong className={"block leading-none -ml-px -mb-2 tracking-tighter font-title text-8xl text-primary-500 font-bold"}>
-                { props.children }
-            </strong>
-            <Sub text={props.subtitle} />
-        </Level>
+        <header>
+            <Level className={"text-5xl -ml-px"}>
+                <strong className={"block leading-none -ml-px -mb-2 tracking-tighter font-title text-8xl text-primary-500 font-bold"}>
+                    { props.children }
+                </strong>
+                <Sub text={props.subtitle} />
+            </Level>
+        </header>
     )
 }
 

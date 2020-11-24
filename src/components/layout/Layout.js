@@ -2,15 +2,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import Header from "./Header"
 import Footer from "./Footer"
-import Container from "../ui/Container"
 
 const Layout = ({ children }) => (
-    <div className="font-light antialiased">
+    <div className="bg-primary-50 font-light antialiased overflow-hidden">
         <Header />
-        <main>
-            <Container>
-                {children}
-            </Container>
+        <main className={"text-xl leading-relaxed"}>
+            {children}
         </main>
         <Footer />
     </div>

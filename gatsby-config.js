@@ -4,6 +4,13 @@ module.exports = {
         subtitle: `Communication`,
         description: `Nous sommes l’une des agences les plus expérimentées de Paris. Nous aimons travailler sur des projets exigeants et complexes.`,
         author: `@aydogduN`,
+        home: {
+            middle: {
+                title: `Nous assurons`,
+                subtitle: `depuis notre création, en 2000.`,
+                content: `Nous avons réalisé plus de 400 sites et applications internet, des plus classiques aux plus sophistiquées (logiciels métiers, intranets, comparateurs, places de marché, e-commerce, sites multilingues...).`,
+            }
+        }
     },
     plugins: [
         `gatsby-plugin-react-helmet`,

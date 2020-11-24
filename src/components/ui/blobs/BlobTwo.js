@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 
 const BlobTwo = ({color}) => (
     <>
-        <svg className={["w-full absolute transform translate-x-8 -translate-y-4 fill-current", color].join(' ')}
-             viewBox="0 0 616 582"
+        <svg className={["w-full absolute -z-1 transform translate-x-28 -translate-y-4 fill-current", color].join(' ')}
+             viewBox="0 0 690 582"
              fill="none"
              xmlns="http://www.w3.org/2000/svg"
         >
@@ -15,25 +15,18 @@ const BlobTwo = ({color}) => (
                 />
             </g>
             <defs>
-                <filter id="filter2_d" x="0" y="0"
-                        width="689.639"
-                        height="581.198"
-                        filterUnits="userSpaceOnUse"
-                        colorInterpolationFilters="sRGB"
-                >
+                <filter id="filter2_d" x="0" y="0" width="689.639" height="581.198" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
                     <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
                     <feOffset dy="8"/>
                     <feGaussianBlur stdDeviation="20"/>
-                    <feColorMatrix type="matrix"
-                                   values="0 0 0 0 0.258824 0 0 0 0 0.596078 0 0 0 0 0.909804 0 0 0 0.1 0"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0.258824 0 0 0 0 0.596078 0 0 0 0 0.909804 0 0 0 0.1 0"/>
                     <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
                     <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
                 </filter>
             </defs>
         </svg>
-
-        <svg className={["w-full absolute transform translate-y-4 fill-current", color].join(' ')}
+        <svg className={["w-full absolute z-4 transform translate-y-16 translate-x-8 fill-current", color].join(' ')}
              viewBox="0 0 655 640"
              fill="none"
              xmlns="http://www.w3.org/2000/svg"

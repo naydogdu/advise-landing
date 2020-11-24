@@ -1,11 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const BlobThree = ({color}) => (
-    <svg className={["w-full absolute transform translate-x-4 -translate-y-4 fill-current", color].join(' ')}
+const BlobThree = ({color, style}) => (
+    <svg className={["absolute z-7 transform translate-x-20 -translate-y-20 fill-current", color].join(' ')}
          viewBox="0 0 705 751"
          fill="none"
          xmlns="http://www.w3.org/2000/svg"
+         style={style}
     >
         <g filter="url(#filter3_d)">
             <path fillRule="evenodd"
@@ -28,11 +29,13 @@ const BlobThree = ({color}) => (
 )
 
 BlobThree.defaultProps = {
-    color: `text-primary-500`
+    color: `text-primary-500`,
+    style: {}
 }
 
 BlobThree.propTypes = {
-    color: PropTypes.string
+    color: PropTypes.string,
+    style: PropTypes.object
 }
 
 export default BlobThree

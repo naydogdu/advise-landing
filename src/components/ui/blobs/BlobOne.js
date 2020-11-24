@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 const BlobOne = ({color}) => (
-    <svg className={["w-full absolute transform -translate-y-8 -translate-x-4 fill-current", color].join(' ')}
+    <svg className={["w-full absolute z-2 transform -translate-y-12 -translate-x-4 fill-current", color].join(' ')}
          viewBox="0 0 729 674"
          fill="none"
          xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { useSiteMeta } from "../hooks/use-site-meta";
+import useSiteMeta from "../hooks/use-site-meta";
 
 function SEO({ description, lang, meta, title }) {
     const data = useSiteMeta()

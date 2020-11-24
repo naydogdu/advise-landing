@@ -68,7 +68,28 @@ module.exports = {
             bold: '700',
             extrabold: '800'
         },
-        extend: {},
+        padding: (theme) => ({
+            ...theme('height')
+        }),
+        extend: {
+            zIndex: {
+                '-1': '-1',
+                1: '1',
+                2: '2',
+                3: '3',
+                4: '4',
+                5: '5',
+                6: '6',
+                7: '7',
+                8: '8',
+                9: '9'
+            },
+            strokeWidth: {
+                4: '4',
+                6: '6',
+                8: '8'
+            },
+        },
     },
     variants: {
         extend: {},
