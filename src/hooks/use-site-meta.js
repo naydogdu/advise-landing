@@ -8,6 +8,8 @@ const useSiteMeta = () => {
                     title
                     subtitle
                     description
+                    siteTitle
+                    createdAt
                     author
                     home {
                         middle {

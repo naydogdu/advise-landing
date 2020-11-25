@@ -3,6 +3,8 @@ module.exports = {
         title: `Advise`,
         subtitle: `Communication`,
         description: `Nous sommes l’une des agences les plus expérimentées de Paris. Nous aimons travailler sur des projets exigeants et complexes.`,
+        siteTitle: `Advise Communication`,
+        createdAt: `2000`,
         author: `@aydogduN`,
         home: {
             middle: {
@@ -35,6 +37,21 @@ module.exports = {
                 display: `minimal-ui`,
                 icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
             },
+        },
+        {
+            resolve: `gatsby-plugin-google-fonts-v2`,
+            options: {
+                fonts: [
+                    {
+                        family: 'Poppins',
+                        weights: ['300', '600', '800']
+                    },
+                    {
+                        family: 'Josefin Sans',
+                        weights: ['700']
+                    }
+                ]
+            }
         },
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline

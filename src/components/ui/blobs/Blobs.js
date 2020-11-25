@@ -25,7 +25,9 @@ const Blobs = ({colorOne, colorTwo, colorThree, children}) => {
     }))
 
     return (
-        <div role="presentation" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
+        <div role="presentation"
+             onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
+        >
             <animated.div style={{ transform: props.xy.interpolate(trans4) }}>
                 <BlobOne color={colorOne} />
             </animated.div>
@@ -35,19 +37,20 @@ const Blobs = ({colorOne, colorTwo, colorThree, children}) => {
             <animated.div style={{ transform: props.xy.interpolate(trans3) }}>
                 <BlobThree color={colorThree} style={{ width: biggerWidth }} />
             </animated.div>
-            <div className={"relative z-10 pb-full"}>
-                <animated.div className={"absolute transform translate-x-16 -translate-y-6 object-cover"}
+            <animated.div className={"relative z-10 pb-full"}
+                          style={{ transform: props.xy.interpolate(trans1) }}
+            >
+                <div className={"absolute transform translate-x-16 -translate-y-6 object-cover"}
                      style={{
                          clipPath: "url(#blobmask)",
                          width: biggerWidth,
-                         height: biggerWidth,
-                         transform: props.xy.interpolate(trans1)
+                         height: biggerWidth
                      }}
                 >
                     {children}
-                </animated.div>
-                <BlobMask />
-            </div>
+                </div>
+            </animated.div>
+            <BlobMask />
         </div>
     )
 }
