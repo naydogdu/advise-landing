@@ -10,7 +10,12 @@ module.exports = {
             middle: {
                 title: `Nous assurons`,
                 subtitle: `depuis notre création, en 2000.`,
-                content: `Nous avons réalisé plus de 400 sites et applications internet, des plus classiques aux plus sophistiquées (logiciels métiers, intranets, comparateurs, places de marché, e-commerce, sites multilingues...).`,
+                description: `Nous avons réalisé plus de 400 sites et applications internet, des plus classiques aux plus sophistiquées (logiciels métiers, intranets, comparateurs, places de marché, e-commerce, sites multilingues...).`,
+            },
+            getInTouch: {
+                title: `Discutons`,
+                subtitle: `de votre futur projet.`,
+                description: `Venez nous <a class="text-secondary-500 underline hover:text-secondary-600 font-extrabold" href="https://www.google.fr/maps/place/Advise+Communication/@49.0380051,2.0776499,17z/data=!3m1!4b1!4m5!3m4!1s0x47e6f53c084d5d31:0xc68488f30a27896a!8m2!3d49.0380051!4d2.0798386" target="_blank" rel="noopener">retrouver</a>...`
             }
         }
     },

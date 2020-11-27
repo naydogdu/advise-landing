@@ -8,6 +8,13 @@ module.exports = {
     ],
     darkMode: 'class', // or 'media' or false
     theme: {
+        screens: {
+            sm: '480px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1280px',
+            '2xl': '1536px',
+        },
         colors: {
             primary: {
                 50: '#f5faff',
@@ -89,6 +96,12 @@ module.exports = {
                 6: '6',
                 8: '8'
             },
+            lineHeight: {
+                'half': '0.75'
+            },
+            scale: {
+                'reverse': '-1'
+            }
         },
     },
     variants: {

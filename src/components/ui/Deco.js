@@ -1,12 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const Diagonals = ({css, color}) => (
+const Diagonals = ({css, color, style}) => (
     //
     // This is handmade, guys ;)
     // See : https://codepen.io/aydogdun/pen/OJRLLEJ
     //
     <svg className={["stroke-current absolute", css, color].join(' ')}
+         style={style}
          xmlns="http://www.w3.org/2000/svg"
     >
         <pattern id="diagonalPattern" patternUnits="userSpaceOnUse" width="16" height="16">
@@ -21,20 +22,25 @@ const Diagonals = ({css, color}) => (
 
 Diagonals.defaultProps = {
     css: `w-full h-full`,
-    color: `text-primary-200`
+    color: `text-primary-200`,
+    style: {}
 }
 
 Diagonals.propTypes = {
     css: PropTypes.string,
-    color: PropTypes.string
+    color: PropTypes.string,
+    style: PropTypes.object
 }
 
-const Crosses = ({css, color}) => (
+const Crosses = ({css, color, style}) => (
     //
     // Okay, I've got path's "d" chain from Figma export, but optimized & improved myself with a pattern :P
     // So, no limit for repeating... :)
     //
-    <svg className={["fill-current absolute", css, color].join(' ')} xmlns="http://www.w3.org/2000/svg">
+    <svg className={["fill-current absolute", css, color].join(' ')}
+         xmlns="http://www.w3.org/2000/svg"
+         style={style}
+    >
         <defs>
             <pattern id="crossPattern" x="0" y="0" width=".1" height=".1">
                 <path d="M0 38.59L2.83 35.76L4.24 37.17L1.41 40H0V38.59ZM0 1.4L2.83 4.23L4.24 2.82L1.41 0H0V1.41V1.4ZM38.59 40L35.76 37.17L37.17 35.76L40 38.59V40H38.59ZM40 1.41L37.17 4.24L35.76 2.83L38.59 0H40V1.41ZM20 18.6L22.83 15.77L24.24 17.18L21.41 20L24.24 22.83L22.83 24.24L20 21.41L17.17 24.24L15.76 22.83L18.59 20L15.76 17.17L17.17 15.76L20 18.59V18.6Z" />
@@ -46,18 +52,21 @@ const Crosses = ({css, color}) => (
 
 Crosses.defaultProps = {
     css: `w-full h-full`,
-    color: `text-primary-200`
+    color: `text-primary-200`,
+    style: {}
 }
 
 Crosses.propTypes = {
     css: PropTypes.string,
-    color: PropTypes.string
+    color: PropTypes.string,
+    style: PropTypes.object
 }
 
-const Circle = ({css, color}) => (
+const Circle = ({css, color, style}) => (
     <svg className={["stroke-current stroke-4 absolute", css, color].join(' ')}
          viewBox="0 0 100 100"
          fill="none"
+         style={style}
          xmlns="http://www.w3.org/2000/svg"
     >
         <circle vectorEffect="non-scaling-stroke" cx="50" cy="50" r="48" />
@@ -66,18 +75,21 @@ const Circle = ({css, color}) => (
 
 Circle.defaultProps = {
     css: `w-full h-full`,
-    color: `text-primary-100`
+    color: `text-primary-100`,
+    style: {}
 }
 
 Circle.propTypes = {
     css: PropTypes.string,
-    color: PropTypes.string
+    color: PropTypes.string,
+    style: PropTypes.object
 }
 
-const DashedCircle = ({css, color}) => (
+const DashedCircle = ({css, color, style}) => (
     <svg className={["stroke-current stroke-1 absolute", css, color].join(' ')}
          xmlns="http://www.w3.org/2000/svg"
          viewBox="0 0 480 480"
+         style={style}
     >
         <pattern id="dashedCircle" vectorEffect="non-scaling-stroke" patternUnits="userSpaceOnUse" width="16" height="16">
             <path d="M-1,1 l8,-8
@@ -95,12 +107,14 @@ const DashedCircle = ({css, color}) => (
 
 DashedCircle.defaultProps = {
     css: `w-full h-full`,
-    color: `text-primary-200`
+    color: `text-primary-200`,
+    style: {}
 }
 
 DashedCircle.propTypes = {
     css: PropTypes.string,
-    color: PropTypes.string
+    color: PropTypes.string,
+    style: PropTypes.object
 }
 
 export { Diagonals, Crosses, Circle, DashedCircle }

@@ -11,8 +11,8 @@ const Title = ({ ...props }) => {
 
     return (
         <header>
-            <Level className={"text-5xl -ml-px"}>
-                <strong className={"block leading-none -ml-px -mb-2 tracking-tighter font-title text-8xl text-primary-500 font-bold"}>
+            <Level className={"text-3xl md:text-5xl -ml-px"}>
+                <strong className={"block leading-half -ml-px mb-3 tracking-tighter font-title text-primary-500 font-bold text-7xl md:text-8xl md:leading-half"}>
                     { props.children }
                 </strong>
                 <Sub text={props.subtitle} />

@@ -15,7 +15,12 @@ const useSiteMeta = () => {
                         middle {
                             title
                             subtitle
-                            content
+                            description
+                        }
+                        getInTouch {
+                            title
+                            subtitle
+                            description
                         }
                     }
                 }

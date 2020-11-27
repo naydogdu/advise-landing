@@ -6,7 +6,7 @@ import Footer from "./Footer"
 const Layout = ({ children }) => (
     <div className="bg-primary-50 font-light antialiased overflow-hidden">
         <Header />
-        <main className={"text-xl leading-relaxed"}>
+        <main className={"text-lg md:text-xl leading-relaxed"}>
             {children}
         </main>
         <Footer />
